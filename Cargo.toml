@@ -1,6 +1,6 @@
 [package]
 name = "xgboost-rs-sys"
-version = "0.1.1"
+version = "0.1.2"
 links = "xgboost"
 build = "build.rs"
 license = "MIT OR Apache-2.0"
@@ -18,6 +18,5 @@ path = "lib.rs"
 libc = "0.2.135"
 
 [build-dependencies]
-cc = { version = "1.0.73", features = ['parallel'] }
 bindgen = "0.60.1"
 cmake = "0.1"
