@@ -47,7 +47,7 @@ fn main() {
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings.");
 
-    println!("cargo:rustc-link-search={}", xgb_root.join("lib").display());
+    println!("cargo:rustc-link-search={}", dst.join("lib").display());
     println!("cargo:rustc-link-lib=xgboost");
     println!("cargo:rustc-link-lib=dmlc");
 
